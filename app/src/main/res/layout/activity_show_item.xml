@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".show_item">
+
+    <androidx.cardview.widget.CardView
+
+
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        app:cardElevation = "10dp"
+        app:cardCornerRadius = "5dp"
+        android:layout_margin = "10dp"
+        android:layout_gravity="center"
+
+        >
+
+
+        <LinearLayout
+
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:layout_gravity = "center"
+            android:gravity = "center"
+            android:orientation ="vertical"
+            android:paddingTop = "5dp"
+            android:paddingBottom ="10dp"
+
+            >
+
+
+            <TextView
+                android:id="@+id/productName2"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsbold"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#666666"
+                android:text="product Name"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dell" />
+            <TextView
+                android:id="@+id/textDescription2"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/description" />
+
+            <TextView
+                android:id="@+id/productPrice2"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="JOD 125"
+                android:textSize="25dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
